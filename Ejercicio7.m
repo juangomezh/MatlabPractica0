@@ -1,0 +1,5 @@
+poli_1 = input("Introduce los valores del polinomio [x1, x2, ...]->")
+poli_2 = input("Introduce los valores del polinomio [x1, x2, ...]->")
+[soluciones, reales, complejas] = raices(poli_1, poli_2)
+figure("Name", "Raices del polinomio", 'NumberTitle', 'off')
+plot(soluciones, "o")

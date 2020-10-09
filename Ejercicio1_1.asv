@@ -1,0 +1,24 @@
+%1_1
+A = [1 2; 3 4; 5 6; 7 8]
+v = [14 ; 16 ; 18 ; 20 ]
+
+B = [A v]
+
+disp(B)
+
+%1_2_
+vector2 = []
+for i = 1:height(B)
+    vector2 = [vector2 B(i,:)]
+end
+
+index = 1
+for i = 1:(height(B))
+    for j = 1:(length(B)-1) 
+        vector(1, index) = B(i, j)
+        index = index+1
+    end
+end
+
+%disp(vector2)
+disp(vector)
