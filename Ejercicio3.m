@@ -1,5 +1,6 @@
 dimensiones = input("Introduzca las dimensiones de la matriz [x y]/[x]: ")
-if(length(dimensiones)==1)
+nArgs = size(dimensiones)
+if(nArgs(1, 2)==1)
     dimensiones = [dimensiones dimensiones]
 end
 A = IntroducirMatriz(dimensiones)

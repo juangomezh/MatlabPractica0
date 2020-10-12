@@ -20,10 +20,10 @@ for i = 1:2:size
 end
 %diagonal
 diagVector = diag(vector)
-maximum = max(vector)
-minimum = min(vector)
-media = mean(vector)
-varianza = var(vector)
+maximum = max(transpose(vector))
+minimum = min(transpose(vector))
+media = mean(transpose(vector))
+varianza = var(transpose(vector))
 
 clc
 disp("\nvector")
